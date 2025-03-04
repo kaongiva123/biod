@@ -88,6 +88,22 @@ h2 {
   font-size: 2em;
   margin-bottom: 20px;
 }
+
+/* Эффект анимированного градиента для заголовков */
+.gradient-text {
+  background: linear-gradient(270deg, #ff9800, #e68900, #ff9800);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Кнопка */
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -111,6 +127,25 @@ h2 {
   border-right: 2px solid #ff9800;
   margin: 0 auto 20px;
   max-width: 80%;
+}
+
+/* Анимированная стрелка вниз */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.scroll-down span {
+  font-size: 2em;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
 }
 
 /* Секция "Обо мне" */
