@@ -23,41 +23,44 @@
     </nav>
   </header>
   
-  <!-- Секция "Главная" с эффектом печатающейся строки -->
+  <!-- Секция "Главная" с эффектом печатающейся строки и стрелкой прокрутки -->
   <section id="home" class="section">
     <div class="container hidden">
-      <h1>Привет, я XDolbaebov</h1>
+      <h1 class="gradient-text">Привет, я [Твое Имя]</h1>
       <div id="typewriter"></div>
       <a href="#about" class="button">Узнать больше</a>
+    </div>
+    <!-- Анимированная стрелка вниз -->
+    <div class="scroll-down">
+      <span>&#x25BC;</span>
     </div>
   </section>
   
   <!-- Секция "Обо мне" -->
   <section id="about" class="section">
     <div class="container hidden">
-      <!-- Изменён путь к фотографии -->
       <img src="photo/me.jpg" alt="Твое Фото">
-      <h2>Обо мне</h2>
-      <p>Я Долбаеб, и делаю ботов для тимы епта, аъуеный крутой тип, сделаю все профи типо емае</p>
+      <h2 class="gradient-text">Обо мне</h2>
+      <p>Я профессионал с большим опытом, постоянно стремлюсь к совершенству и новаторству. Мои достижения и опыт помогут вам принять верное решение.</p>
     </div>
   </section>
   
   <!-- Секция "Услуги" -->
   <section id="services" class="section">
     <div class="container hidden">
-      <h2>Мои услуги</h2>
+      <h2 class="gradient-text">Мои услуги</h2>
       <div class="services-grid">
         <div class="service-card">
           <h3>Консультации</h3>
-          <p>Поговорим, обговорим что куда кого куда</p>
+          <p>Индивидуальные консультации и поддержка на всех этапах сотрудничества.</p>
         </div>
         <div class="service-card">
           <h3>Проекты</h3>
-          <p>Ебну бота, все будет заебумба епта.</p>
+          <p>Комплексная реализация проектов от идеи до воплощения.</p>
         </div>
         <div class="service-card">
           <h3>Поддержка</h3>
-          <p>Помогу настроить и подключить бота на сервер епта.</p>
+          <p>Постоянное сопровождение и помощь в развитии вашего бизнеса.</p>
         </div>
       </div>
     </div>
@@ -66,19 +69,19 @@
   <!-- Секция "Достижения" с анимированными счётчиками -->
   <section id="achievements" class="section">
     <div class="container hidden">
-      <h2>Достижения</h2>
+      <h2 class="gradient-text">Достижения</h2>
       <div class="achievements-grid">
         <div class="achievement">
-          <div class="number" data-target="2">0</div>
-          <div class="label">Года опыта</div>
+          <div class="number" data-target="10">0</div>
+          <div class="label">Лет опыта</div>
         </div>
         <div class="achievement">
-          <div class="number" data-target="3">0</div>
-          <div class="label">Проекта</div>
+          <div class="number" data-target="50">0</div>
+          <div class="label">Проектов</div>
         </div>
         <div class="achievement">
-          <div class="number" data-target="3">0</div>
-          <div class="label">Клиента</div>
+          <div class="number" data-target="100">0</div>
+          <div class="label">Клиентов</div>
         </div>
       </div>
     </div>
@@ -87,38 +90,38 @@
   <!-- Секция "Отзывы" с слайдером и модальным окном для подробного просмотра -->
   <section id="testimonials" class="section">
     <div class="container hidden">
-      <h2>Отзывы</h2>
+      <h2 class="gradient-text">Отзывы</h2>
       <div class="testimonials-slider">
-        <div class="testimonial active" data-fulltext="хочу сказать большое спасибо - @ownerdolbaebov, что сделал мне этого ебучего бота и хочу чтобы ты помогал мне с ним в дальнейшем, потому что я тупой нихуя не понимаю с ним особо, но принцип работы ясен. этот бот просто ахуенен, спасибо что не посылал меня нахуй на возможно для тебя глупые вопросы, я очень благодарен тебе за данную работу, все сделано ахуенно">
-          <p>«хочу сказать большое спасибо - @ownerdolbaebov, что сделал мне этого ебучего бота и хочу чтобы ты помогал мне с ним в дальнейшем»</p>
-          <h4>- @gepoteza</h4>
+        <div class="testimonial active" data-fulltext="Работать с [Твое Имя] – одно удовольствие. Он знает, как превратить идею в реальность! Его подход профессионален, а креативность удивляет. Рекомендую его услуги всем, кто ищет высокое качество и индивидуальный подход.">
+          <p>«Работать с [Твое Имя] – одно удовольствие. Он знает, как превратить идею в реальность!»</p>
+          <h4>- Клиент 1</h4>
           <button class="more-btn">Подробнее</button>
         </div>
-        <div class="testimonial" data-fulltext="Сделал четко, красиво и главное быстро
-        Спасибо @@ownerdolbaebov за бота">
-          <p>«Сделал четко, красиво и главное быстро»</p>
-          <h4>- @by_flake</h4>
+        <div class="testimonial" data-fulltext="Профессионализм и внимание к деталям на высшем уровне. [Твое Имя] продемонстрировал высокую квалификацию и творческий подход. Его работа оставила самые положительные впечатления.">
+          <p>«Профессионализм и внимание к деталям на высшем уровне. Рекомендую!»</p>
+          <h4>- Клиент 2</h4>
           <button class="more-btn">Подробнее</button>
         </div>
-        <div class="testimonial" data-fulltext="@xDolbaebov сделал очень хорошего бота для команды, объяснил как что работает, +rep">
-          <p>«@xDolbaebov сделал очень хорошего бота для команды»</p>
-          <h4>- @KingVn</h4>
+        <div class="testimonial" data-fulltext="Лучший выбор для тех, кто ценит качество и стиль. [Твое Имя] создал проект, который превзошел все ожидания. Его индивидуальный подход и нестандартные решения делают его работу уникальной.">
+          <p>«Лучший выбор для тех, кто ценит качество и стиль. Спасибо за сотрудничество!»</p>
+          <h4>- Клиент 3</h4>
           <button class="more-btn">Подробнее</button>
         </div>
+      </div>
     </div>
   </section>
   
   <!-- Секция "Контакты" - только Telegram -->
   <section id="contact" class="section">
     <div class="container hidden">
-      <h2>Контакты</h2>
-      <p>Что бы со мной пообщаться, обговорить, что куда - пиши в телегу почти всегда в сети</p>
-      <p style="margin-top:20px;">Telegram: <a href="https://t.me/xDolbaebov" target="_blank" style="color: #ff9800; text-decoration: none;">@xDolbaebov</a></p>
+      <h2 class="gradient-text">Контакты</h2>
+      <p>Свяжитесь со мной в Telegram для обсуждения сотрудничества или уточнения деталей.</p>
+      <p style="margin-top:20px;">Telegram: <a href="https://t.me/YourTelegram" target="_blank" style="color: #ff9800; text-decoration: none;">@YourTelegram</a></p>
     </div>
   </section>
   
   <footer>
-    <p>&copy; 2025 xDolbaebov.  Я нихуя не защищаю, я мирняк.</p>
+    <p>&copy; 2025 [Твое Имя]. Все права защищены.</p>
   </footer>
   
   <!-- Кнопка прокрутки вверх -->
